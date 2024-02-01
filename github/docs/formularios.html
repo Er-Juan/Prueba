@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Juan Romero">
+    <meta name="Description" content="Formulario para rellenar datos">
+    <meta name="keywords" content="html, formulario, practica">
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <title>Todos los imputs</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+        <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Apellidos</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+        <label for="date">Fecha de nacimiento:</label><br>
+            <input type="date" id="date" name="date" value=""><br>
+        <label for="tel">Teléfono</label><br>
+            <input type="tel" id="tel" name="tel" value=""><br>
+        <label for="email">Ponga su email:</label><br>
+            <input type="email" id="email" name="email" value=""><br>
+            <label for="procedencia">Elija su procedencia</label>
+            <input type="radio" id="html" name="procedencia" value="HTML">
+            <label for="España">España</label><br>
+            <input type="radio" id="css" name="procedencia" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="procedencia" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+        <label> Escriba o Seleccione el buscador que usas: </label>
+            <input list="buscador" name="buscador">
+            <datalist id="buscador">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Internet Explorer"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                <option value="Microsoft Edge"></option>
+              </datalist><br>
+        <label for="datetime-local">Fecha y hora actual:</label><br>
+            <input type="datetime-local" id="datename-local" name="datename-local" value=""><br>
+        <label for="color">Color preferido:</label><br>
+            <input type="color" id="color" name="color" value=""><br>
+        <label for="month">Mes de tu subscripción:</label><br>
+            <input type="month" id="month" name="month" value=""><br>
+        <label for="file">Suba su fichero:</label><br>
+            <input type="file" id="file" name="file"><br>
+        <label for="url">URL</label><br>
+            <input type="url" id="url" name="url" value=""><br>
+        <label for="image">Suba su imagen:</label><br>
+            <input type="image" id="image" alt="imagen"><br>
+        <label for="password">Ponga su contraseña</label><br>
+            <input type="password" id="password" name="password" value=""><br>
+        <label for="number">Numero de usuario:</label><br>
+            <input type="number" id="number" name="number" value=""><br>
+        <label for="range">Puntua (cuanto mas a la izquierda peor la calificación):</label><br>
+            <input type="range" id="range" name="range"><br>
+        <label for="reset">Reset</label><br>
+            <input type="reset" id="reset" name="reset" value=""><br>
+        <label for="search">Buscador</label><br>
+            <input type="search" id="search" name="reset" value=""><br>
+        <label for="checkbox">Acepto terminos:</label><br>
+            <input type="checkbox" id="checkbox" name="checkbox" value=""> todos los terminos<br>
+            <input type="checkbox" id="checkbox" name="checkbox" value=""> terminos necesarios<br>
+            <input type="checkbox" id="checkbox" name="checkbox" value=""> terminos terminos no necesarios<br>
+        </fieldset>
+        <input type="submit" id="sumbit" name="sumbit"><br>
+    </form>
+    </body>
+</html>
